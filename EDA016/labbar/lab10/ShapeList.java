@@ -51,15 +51,6 @@ public class ShapeList {
 	 * @param yc
 	 *            y-koordinaten
 	 */
-	public Shape findHit(int xc, int yc) {
-		for(int i = 0; i<shapes.size(); i++)	{
-			Shape s = shapes.get(i);
-			if(s.near(xc, yc))	{
-				return s;
-			}
-		}
-		return null;
-	}
 	
 	public Shape findShape(int xc, int yc) {
 		for(int i = 0; i<shapes.size(); i++)	{
