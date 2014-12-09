@@ -35,9 +35,13 @@ public abstract class Shape {
 	/**Tar reda p�� vilken typ av figur det ��r*/
 	public abstract char getType();
 	
-	public abstract int getX();
+	public int getX()	{
+		return x;
+	}
 	
-	public abstract int getY();
+	public int getY()	{
+		return y;
+	}
 	
 	public abstract int getSpecial();
 	
@@ -63,18 +67,5 @@ public abstract class Shape {
 		y = newY;
 		w.setLineColor(savedColor);
 		draw(w);
-	}
-
-	/**
-	 * Unders��ker om punkten xc,yc ligger "n��ra" figuren. Med "n��ra" menas inom
-	 * 10 pixlar fr��n den punkt som definierar punktens l��ge.
-	 * 
-	 * @param xc
-	 *            x-koordinat
-	 * @param yc
-	 *            y-koordinat
-	 */
-	public boolean near(int xc, int yc) {
-		return Math.abs(x - xc) < 10 && Math.abs(y - yc) < 10;
 	}
 }

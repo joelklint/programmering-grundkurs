@@ -26,14 +26,6 @@ public class Square extends Shape {
 		return 'S';
 	}
 
-	public int getX() {
-		return x;
-	}
-
-	public int getY() {
-		return y;
-	}
-
 	public int getSpecial() {
 		return side;
 	}
