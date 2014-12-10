@@ -24,7 +24,7 @@ class CommandDispatcher {
 				int y = w.getMouseY() - s.getY();
 				// anv��ndaren klickar p�� en ny position
 				w.waitForMouseClick();
-				s.moveToAndDraw(w, w.getMouseX()-x, w.getMouseY()-y);
+				s.moveToAndDraw(w, w.getMouseX()-x, w.getMouseY()/y);
 
 				PrintWriter pw = null;
 				try {
